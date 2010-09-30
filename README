@@ -1,6 +1,17 @@
 # Created @ 05.01.2010 by TheFox@fox21.at
 
+Description
+	iPhone Doodle Jump hack.
+	See more infos: http://fox21.at/iphone-doodle-jump-hack.html
+
 Requirements
-	
+	- Perlmodule:
+		FindBin
+		LWP::Simple
+		LWP::UserAgent
+		HTTP::Request
+		HTTP::Request::Common
+		HTTP::Response
+		Digest::MD5
 
 # EOF
