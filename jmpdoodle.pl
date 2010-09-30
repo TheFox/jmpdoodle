@@ -23,14 +23,33 @@
 
 use strict;
 use FindBin;
+use LWP::Simple;
+use LWP::UserAgent;
+use HTTP::Request;
+use HTTP::Request::Common qw(GET POST);
+use HTTP::Response;
+use Digest::MD5 qw(md5_hex);
 
 $| = 1;
 
+
+my $NICK = 'TheFox';
+my $SCORE = 6410815;
+my $BROWSER_USERAGENT = 'DoodleJump/1.13.2 CFNetwork/342.1 Darwin/9.4.1';
+my $BINDIP = '';
 
 sub main{
 	
 	chdir $FindBin::Bin;
 	
+	my $shash = md5_hex('gombaliste'.$SCORE);
+	
+	my $url = 'http://www.limasky.com/limasky/webservices/doodle_jump/gethighscores.cfm?s='.$SCORE.'&sn='.$NICK.'&shash='.$shash.'&uid=9fc51f9e64626801981ab594c097477885c128f8&m=1&lng=de&gl2=0';
+	
+	print "hash: $shash\n";
+	print "send request...\n";
+	print wget($url)."\n";
+	print "end\n";
 	
 }
 
