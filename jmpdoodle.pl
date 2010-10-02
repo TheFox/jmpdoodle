@@ -35,6 +35,7 @@ $| = 1;
 
 my $NICK = 'TheFox';
 my $SCORE = 6410815;
+my $UID = '9fc51f9e64626801981ab594c097477885c128f8';
 my $BROWSER_USERAGENT = 'DoodleJump/1.13.2 CFNetwork/342.1 Darwin/9.4.1';
 my $BINDIP = '';
 
@@ -44,11 +45,15 @@ sub main{
 	
 	my $shash = md5_hex('gombaliste'.$SCORE);
 	
-	my $url = 'http://www.limasky.com/limasky/webservices/doodle_jump/gethighscores.cfm?s='.$SCORE.'&sn='.$NICK.'&shash='.$shash.'&uid=9fc51f9e64626801981ab594c097477885c128f8&m=1&lng=de&gl2=0';
+	my $url = 'http://www.limasky.com/limasky/webservices/doodle_jump/gethighscores.cfm?s='.$SCORE.'&sn='.$NICK.'&shash='.$shash.'&uid='.$UID.'&m=1&lng=de&gl2=0';
 	
+	print "nick: $NICK\n";
+	print "score: $SCORE\n";
 	print "hash: $shash\n";
-	print "send request...\n";
-	print wget($url)."\n";
+	print "url: $url\n";
+	
+	print "send request... "; wget($url); print "ok\n";
+	
 	print "end\n";
 	
 }
