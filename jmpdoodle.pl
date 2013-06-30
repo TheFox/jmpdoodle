@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-# Created @ 05.01.2010 by TheFox@fox21.at
+# Created @ 30.09.2010 by TheFox@fox21.at
 # Version: 1.0.0
 # Copyright (c) 2010 TheFox
 
@@ -33,9 +33,9 @@ use Digest::MD5 qw(md5_hex);
 $| = 1;
 
 
-my $NICK = 'TheFox';
-my $SCORE = 6410815;
-my $UID = '9fc51f9e64626801981ab594c097477885c128f8';
+my $NICK = 'TheFox21';
+my $SCORE = 666777;
+my $UID = '8fc51f9e64626801981ab594c097477885c128f8';
 my $BROWSER_USERAGENT = 'DoodleJump/1.13.2 CFNetwork/342.1 Darwin/9.4.1';
 my $BINDIP = '';
 
