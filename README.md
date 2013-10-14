@@ -1,8 +1,6 @@
 # jmpdoodle
 iPhone Doodle Jump hack.
 
-Visit [fox21.at](http://fox21.at).
-
 ## Requirements
 - Perlmodules:
 	- FindBin
