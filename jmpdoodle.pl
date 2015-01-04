@@ -32,7 +32,8 @@ sub main{
 	
 	my $shash = md5_hex('gombaliste'.$SCORE);
 	
-	my $url = 'http://www.limasky.com/limasky/webservices/doodle_jump/gethighscores.cfm?s='.$SCORE.'&sn='.$NICK.'&shash='.$shash.'&uid='.$UID.'&m=1&lng=de&gl2=0';
+	my $url = 'http://www.limasky.com/limasky/webservices/doodle_jump/gethighscores.cfm';
+	$url .= '?s='.$SCORE.'&sn='.$NICK.'&shash='.$shash.'&uid='.$UID.'&m=1&lng=en&gl2=1&tp=2&tm=2&v=312.000000';
 	
 	print "nick: $NICK\n";
 	print "score: $SCORE\n";
