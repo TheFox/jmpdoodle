@@ -70,7 +70,10 @@ sub wget{
 	$req->content($content) if $content ne '';
 	$req->content_type($type) if $type ne '';
 	$req->referer($referer) if $referer ne '';
-	$req->header('Accept-Encoding' => ''); # Anti Gzip.
+	$req->header('Accept-Encoding' => 'gzip, deflate');
+	$req->header('Accept' => '*/*');
+	$req->header('Accept-Language' => 'en-us');
+	$req->header('Connection' => 'keep-alive');
 	
 	#print $req->as_string();
 	
