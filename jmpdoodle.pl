@@ -22,8 +22,8 @@ $| = 1;
 
 my $NICK = 'TheFox21';
 my $SCORE = 666777;
-my $BROWSER_USERAGENT = 'DoodleJump/1.13.2 CFNetwork/342.1 Darwin/9.4.1';
 my $UID = '76C6D1DD-38FA-44D8-BC78-B6F4445ED7A9';
+my $BROWSER_USERAGENT = 'DoodleJump/3.12.3 CFNetwork/711.1.16 Darwin/14.0.0';
 my $BINDIP = '';
 
 sub main{
