@@ -18,7 +18,7 @@
 
 # Description:
 # iPhone Doodle Jump hack.
-# See more infos: http://fox21.at/iphone-doodle-jump-hack.html
+# See more infos: http://blog.fox21.at/2010/01/05/doodle-jump-hack.html
 
 
 use strict;
