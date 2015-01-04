@@ -1,4 +1,4 @@
-# jmpdoodle
+# JMPDoodle
 iPhone Doodle Jump hack.
 
 ## Requirements
