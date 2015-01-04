@@ -43,7 +43,7 @@ sub main{
 	print "[ ] send request... "; wget($url);
 	print "OK \r[+]\n";
 	
-	print "end\n";
+	print "[+] end\n";
 	
 }
 
