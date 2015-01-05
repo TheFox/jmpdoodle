@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 # Created @ 30.09.2010
-# Version: 1.0.0
+# Version: 1.1.0
 # Copyright (C) 2010 - 2015 Christian Mayer <http://fox21.at>
 
 # Description:
